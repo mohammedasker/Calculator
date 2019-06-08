@@ -18,3 +18,41 @@ the calculated number displays the result*/
 /*if the inputs is not correct
 produce error warning
 display "Invalid number"*/
+
+const calculator = document.queryselector('.calculator')
+const keys = calculator.queryselector('calculator_keys')
+
+keys.addEventListener('click'. e =>  {
+	if (e.target.matches('button')) {
+		//do something
+	}
+})
+
+const key = e.target
+const action = key.dataset.action
+
+if (!action) {
+	console.log('number key!')
+}
+
+if (
+	action === 'add' ||
+	action === 'subtract' ||
+	action === 'multiply' ||
+	action === 'division'
+	) {
+	console.log('operator key!')
+}
+
+if (action === 'decimal') {
+	console.log('decimal key!')
+}
+
+if (action === 'clear') {
+	console.log('clear key!')
+}
+
+if (action === 'calculate') {
+	console.log('equal key!')
+}
+
