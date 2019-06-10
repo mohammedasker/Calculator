@@ -3,17 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=0.80, maximum-scale=0.80, user-scaleable=0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Calculator</title>
 </head>
-
-<style>
-	.calculator_keys {
-		display: grid;
-		grid-template-columns: 15% 15% 15% 15%;
-		font-size: 50px;
-	}
-</style>
 
 <style>
 	#wrapper {
@@ -50,9 +43,9 @@
 		<button type="button" onclick="number(value)" value="8">8</button>
 		<button type="button" onclick="number(value)" value="9">9</button>
 		<button type="button" onclick="number(value)" value="*">*</button>
-		<button type="button" onclick="number(value)" value="C">C</button>
+		<button type="button" onclick="cle(value)" value="">C</button>
 		<button type="button" onclick="number(value)" value="0">0</button>
-		<button type="button" onclick="number(value)" value="=">=</button>
+		<button type="button" onclick="evalua()">=</button>
 		<button type="button" onclick="number(value)" value="/">/</button>
 		</form>
 	</div>
