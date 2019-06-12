@@ -20,12 +20,20 @@ produce error warning
 display "Invalid number"*/
 
 
-if (form1.result.value != value.result.value) {
-	//return ('Syntax_Error')
-	console.log('not typed correctly');
-}
-
 // Set digit input limits up to 15
 
 // Scale down the dight size when it exceeds 13 digits
+function isOverflown(result) {
+    return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
+}
+let el = document.getElementById('result');
+let fontSize = parseInt(el.style.fontSize);
+for (let i = fontSize; i >= 0; i--) {
+    let overflow = isOverflown(el);
+    if (overflow) {
+     fontSize--;
+     el.style.fontSize = fontSize + "px";
+    }
+}
+
 
